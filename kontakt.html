@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept senden</title>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Rezept einsenden
+        </h1>
+
+        <nav>
+            <ul>
+                <li><a href="Index.html">Start</a></li>
+                <li><a href="Pizzateig.html">Pizzateig</a></li>
+                <li><a href="wochenplan.html">Wochenplan</a></li>
+                <li><a href="kuechenwissen.html">Kuechenwissen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Sende Nonna dein Rezept</h2>
+        <p>Soll Nonna auch dein Rezept mal testen? Dann schick es ihr! <br>
+        mit * markierten feldern Müssen ausgefüllt werden</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend> Über dich </legend>
+                <p>
+                <label for="name"> Dein Name*</label>
+                <br>
+                <input type="text" id="name" name="name" required> 
+                </p> 
+                <p>
+                    <label for="email">Email*</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+
+                </p>
+                <p>
+                    <label for="telefon">Telefon </label>
+                    <br>
+                    <input type="tel" id="telefon" name="telefon" >
+                </p>
+                </fieldset>
+                <fieldset>
+                    <label> dein rezept </label>
+                <p>
+                    <label for="rezept">Name des Rezepts*</label>
+                    <br>
+                    <input type="text" id="rezept" name="rezept" required>
+                </p>
+                <p>
+                    <label for="kategorie"> Kategorie </label>
+                    <br>
+                    <select id="kategorie" name="kategorie">
+                        <option value="Hauptspeise"> Hauptspeise </option>
+                        <option value="Hauptspeise"> Vorspeise </option>
+                        <option value="Hauptspeise"> Nachspeise </option>
+                        <option value="Hauptspeise"> Gebäck </option>
+                    </select>
+                        
+                </p>
+
+                <p>
+                    <label for="Schwierigkeit"> Schwierigkeit </label>
+                    <br>
+                    <input type="radio" id="Leicht" name="Schwierigkeit" value="leicht">
+                    <label for="Leicht">Leicht</label>
+                    <br>
+                    <input type="radio" id="mittel" name="Schwierigkeit" value="mittel">
+                    <label for="mittel">mittel</label>
+                    <br>
+                    <input type="radio" id="schwehr" name="Schwierigkeit" value="schwehr">
+                    <label for="schwehr">schwehr</label>
+                </p>
+                <p>
+                    <label for="person">für wieviele Personen?</label>
+                    <br>
+                    <input type="number" id="person" name="person>">
+                </p>
+                <p>
+                    <label for="vegetarisch">Vegetarisch</label>
+                    <br>
+                    <input type="checkbox" id="vegetarisch" name="vegetarisch">
+                </p>
+                <p>
+                    <label for="rezept"> Dein Rezept* </label>
+                    <br>
+                    <textarea id="rezept" name="rezept" rows="8" cols="100" required></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="newsletter">Newsletter</label>
+                    <br>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </p>
+                <p>
+                    <label for="datenspeichern">ich bin einverstanden, dass nonna meine antworten speichert um mir zu antworten*</label>
+                    <br>
+                    <input type="checkbox" id="datenspeichern" name="datenspeichern" required>
+                    <br>
+                </p>
+                <input type="submit" id="abschicken" name="Abschicken">
+                <br>
+                <input type="reset" id="loeschen" name="loeschen">
+
+
+            </fieldset>
+        </form>
+
+
+    </main>
+  
+    <footer>
+        <p>&copy; 2026 Nonna Rosa - Brooklyn, New York</p>
+
+
+    </footer>
+    </body>
